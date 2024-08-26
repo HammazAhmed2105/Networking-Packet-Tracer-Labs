@@ -1,8 +1,19 @@
-# Networking-Packet-Tracer-Labs
-This repo will have several labs on packet tracer.
-I decided to do these labs as a mini project after I cleared my CCNA in August 2024. 
+Networking-Packet-Tracer-Labs
+Welcome to the Networking-Packet-Tracer-Labs repository! This repository contains a collection of Packet Tracer labs that I created as part of a mini project after clearing my CCNA in August 2024.
 
-**How to use this repository**
-1 - There are several fully functional packet tracer lab files along with their respective word files. The word files contain all the explanation of the lab and what all I performed, how I subnetted, commands for VLans, asigning IP ADdresses and much more.
-2 - You can download these files and practice yourselves, and you can also check connectivity between different end devices present in the lab, to see if it works.
+Overview
+This repository includes several fully functional Packet Tracer lab files, each accompanied by a detailed Word document. The Word documents provide explanations of the lab setup, including:
 
+Subnetting and IP Address assignment
+VLAN configuration commands
+Network security practices
+Connectivity checks between end devices
+And more...
+How to Use This Repository
+Download Lab Files: Each lab is provided with its respective Packet Tracer file (.pkt) and a Word document (.docx) containing detailed explanations and configurations.
+
+Practice: You can use these files to practice the lab scenarios. Follow the instructions provided in the Word documents to understand the network setup, configurations, and verify connectivity between different devices.
+
+Explore: Feel free to explore the configurations and make adjustments to enhance your understanding of networking concepts.
+
+This structure should make it easier for others to understand how to use your repository effectively.
