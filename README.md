@@ -19,3 +19,4 @@ This repository includes several fully functional Packet Tracer lab files, each 
 2. **Practice**: You can use these files to practice the lab scenarios. Follow the instructions provided in the Word documents to understand the network setup, configurations, and verify connectivity between different devices.
 
 3. **Explore**: Feel free to explore the configurations and make adjustments to enhance your understanding of networking concepts.
+4. 3. **Using index.md**: Each folder has an index.md file. This can be sued for seeing how the configurations were made and what commands were utilized.
