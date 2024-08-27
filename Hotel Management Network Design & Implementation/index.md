@@ -1,4 +1,4 @@
-Here's how you can structure your project documentation in a code block format for GitHub:
+
 
 ```markdown
 # Vic Modern Hotel Network Project
