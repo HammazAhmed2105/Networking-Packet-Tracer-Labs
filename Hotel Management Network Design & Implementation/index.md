@@ -3,7 +3,6 @@
 ```markdown
 # Vic Modern Hotel Network Project
 
-![Network Diagram](Picture1.png)
 As part of your end-of-year networking project, you are required to design and implement the Vic Modern Hotel Network. The hotel has three floors:
 
 - **1st Floor:**
