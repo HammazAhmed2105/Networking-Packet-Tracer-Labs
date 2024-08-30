@@ -21,3 +21,4 @@ This repository includes several fully functional Packet Tracer lab files, each 
 3. **Explore**: Feel free to explore the configurations and make adjustments to enhance your understanding of networking concepts.
 4. **Using index.md**: Each folder has an index.md file. This can be used for seeing how the configurations were made and what commands were utilized.
 5. **Note** - The walkthrough in thr word files have images you can follow for assisstance, for a more clear explanation but without screenshots, you can use the index.md.
+6. **Question.md** - This file contains the scenario on what we must configure.
