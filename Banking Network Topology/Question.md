@@ -43,23 +43,4 @@
 8. **Server Configuration:** Set up HTTP and Email servers.
 9. **Remote Management:** Configure SSH on all routers for secure remote login.
 
-## Steps to Implement the Network
 
-```bash
-# Step 1: Configure OSPF on each router
-router ospf 1
- network 192.168.0.0 0.0.255.255 area 0
-
-# Step 2: Set up DHCP server for IP address assignment
-ip dhcp pool VLAN10
- network 192.168.10.0 255.255.255.0
- default-router 192.168.10.1
-
-# Step 3: Configure SSH on each router for remote management
-hostname <router_name>
-ip domain-name radeoncompany.com
-crypto key generate rsa
-ip ssh version 2
-line vty 0 4
- transport input ssh
- login local
