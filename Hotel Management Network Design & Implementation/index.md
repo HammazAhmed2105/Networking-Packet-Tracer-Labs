@@ -6,7 +6,6 @@
 - Enable serial interfaces by adding "HWIC-2T" modules.
 - Connect routers using serial DCE cables.
 - Set clock rate on serial DCE interfaces and bring up the interfaces using `no shutdown`.
-- <img src="https://i.imgur.com/HMOvawW.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 ### 2. Connect Switches to Routers
 - Each floor has one switch connected to the respective router.
