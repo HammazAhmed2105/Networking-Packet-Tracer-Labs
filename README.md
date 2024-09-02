@@ -22,3 +22,4 @@ This repository includes several fully functional Packet Tracer lab files, each 
 4. **Using index.md**: Each folder has an index.md file. This can be used for seeing how the configurations were made and what commands were utilized.
 5. **Note** - The walkthrough in thr word files have images you can follow for assisstance, for a more clear explanation but without screenshots, you can use the index.md.
 6. **Question.md** - This file contains the scenario on what we must configure.
+7. **PNG files**: Every folder has a Final_Topology_View.png file which shows what the end result looks like.
