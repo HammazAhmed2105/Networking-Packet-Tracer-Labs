@@ -129,4 +129,8 @@ wr
 
 ## Assigning VLANs and switch port security to access layer switches.
 
+ <img src="https://i.imgur.com/klEl6Tt.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+For all access layer switches the port inside purple circle will be access port, and the other two will be trunk ports.
+Commands are simple as shown below.
 
