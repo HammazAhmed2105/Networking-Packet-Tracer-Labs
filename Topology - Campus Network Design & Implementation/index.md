@@ -98,3 +98,8 @@ Int g1/0/2 should be connected with VLAN 90, and the other int with VLAN 100.
 
 ## Trunk config
 <img src="https://i.imgur.com/AZJmmOv.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+See the below image to understand which interface will be assigned ip addresses, which will have trunk config, and which will be used for inter-vlan routing.
+<img src="https://i.imgur.com/K9eG2cC.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+
