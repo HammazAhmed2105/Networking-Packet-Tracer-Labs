@@ -45,7 +45,7 @@ Our final router connection will look like this:
    - Ensure that the power supply is securely attached before proceeding with any further configurations.
   <img src="https://i.imgur.com/kYcADgg.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-  Here's the configuration for hostnames, line console, vty passwords, and disabling domain IP lookup in GitHub code format:
+ 
 
 ```markdown
 ## Configuring Hostnames, Line Console, VTY Passwords, and Disabling Domain IP Lookup
@@ -84,7 +84,6 @@ Note: I will be copy-pasting these commands on the switch, hence I'll use the sa
 
 <img src="https://i.imgur.com/adyrzZo.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-Here's the configuration for L3 Switch in GitHub code format, including SSH configuration:
 
 ```markdown
 ## L3 Switch Configuration
@@ -128,7 +127,6 @@ exit
 wr
 ```
 
-This configuration ensures that your L3 switch is set up with a hostname, console and VTY passwords, SSH access, and security settings, all formatted for easy use on GitHub.
-
+## Assigning VLANs and switch port security to access layer switches.
 
 
