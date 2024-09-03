@@ -263,7 +263,7 @@ How to know which networks will be advertised by the routers and switches? A sim
 <img src="https://i.imgur.com/PK7LwIC.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 ### OSPF Configuration for R1
 
-Configure OSPF on R1 with the following commands:
+## Configure OSPF on R1 with the following commands:
 
 ```plaintext
 Router ospf 10
