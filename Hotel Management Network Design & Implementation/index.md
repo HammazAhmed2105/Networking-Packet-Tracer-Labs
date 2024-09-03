@@ -115,4 +115,4 @@ Do the same for all other switches.
 Configuring ip addresses in router.
 Now we have /30 notations on the routers, so that smeans there  will be 2 ip addresses. 
 
-<img src="https://i.imgur.com/3ZvF3rI.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/3ZvF3rI.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
