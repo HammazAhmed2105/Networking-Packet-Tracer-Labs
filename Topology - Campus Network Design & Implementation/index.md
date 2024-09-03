@@ -94,3 +94,7 @@ Switch(config-vlan)# name HR_VLAN
    Switch(config-if-range)# switchport access vlan 10
 
 <img src="https://i.imgur.com/56iuA3Y.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+Int g1/0/2 should be connected with VLAN 90, and the other int with VLAN 100.
+
+## Trunk config
+<img src="https://i.imgur.com/AZJmmOv.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
