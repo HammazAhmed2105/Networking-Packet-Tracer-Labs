@@ -23,3 +23,43 @@ To make the connection between cloud router and main router as serial dce, we ne
    - This command will display the status of all interfaces on the router.
 
 <img src="https://i.imgur.com/TOchgIa.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+This router is our main campus router, int g0/0 and the other two serial interfaces are In use so we will only turn them on.
+
+<img src="https://i.imgur.com/SLF7H34.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+Same config is to be done for all other routers.
+## Network Configurations
+
+### Step 2 – Enable Clock Rate
+
+1. **Identify Interfaces:**
+   - To determine which interfaces need the clock rate enabled, check the diagram where the two routers are connected with a red line.
+   - Look for the interface that has a clock sign on it, indicating it is the DCE (Data Communications Equipment) side of the connection.
+
+2. **Configure Clock Rate:**
+   - On the router connected to the DCE end, enable the clock rate on the correct serial interface.
+
+   Example command:
+<img src="https://i.imgur.com/IsqgqqU.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+## Network Configurations
+
+### Step 3 – Configuring VLANs
+
+1. **VLAN Configuration:**
+   - VLANs have been configured on all switches. Below are the commands used for configuring VLAN 10 as an example.
+
+2. **Commands for VLAN 10:**
+
+   ```bash
+   Switch(config)# vlan 10
+   Switch(config-vlan)# name Admin_VLAN
+
+   Switch(config)# interface range f0/1-24
+   Switch(config-if-range)# switchport mode access
+   Switch(config-if-range)# switchport access vlan 10
+
+<img src="https://i.imgur.com/LqYXKG2.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/zk3usIR.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
