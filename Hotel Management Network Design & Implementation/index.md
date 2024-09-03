@@ -134,3 +134,9 @@ no shutdown
 ```
 
 <img src="https://i.imgur.com/3ZvF3rI.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+
+So se0/2/0 gets 10.10.10.5.
+And se0/2/1 gets 10.10.10.9 since it has the network 10.10.10.8/30
+
+<img src="https://i.imgur.com/ni3szVG.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+
