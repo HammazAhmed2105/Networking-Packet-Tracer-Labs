@@ -104,15 +104,33 @@ For R3
 
 <img src="https://i.imgur.com/Ved0tsg.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-For R1
-No config needed except turning the interfaces on
-For R2
-The config is almost same
-Now we setup vlans. Since there are diff vlan, we will configure them using access port, but the link between router and switch will be trunk.
-For respective interfaces we use switcport mode accesss, followed by sw access vlan “number”
-For switch one f0/1 is connected to router. Hence it’s the trunk link.
+# Router and Switch Configuration
+
+## R1
+No config needed except turning the interfaces on.
+
+## R2
+The config is almost same.
+
+## VLAN Setup
+Now we setup VLANs. Since there are different VLANs, we will configure them using access port, but the link between router and switch will be trunk.
+
+For respective interfaces we use `switchport mode access`, followed by `switchport access vlan “number”`.
+
+For switch one, `f0/1` is connected to router. Hence it’s the trunk link.
+
 Do the same for all other switches.
-Configuring ip addresses in router.
-Now we have /30 notations on the routers, so that smeans there  will be 2 ip addresses. 
+
+## Configuring IP Addresses on Routers
+Now we have `/30` notations on the routers, so that means there will be 2 IP addresses.
+
+### Example Configuration
+
+For Router 1:
+```plaintext
+interface Serial0/0
+ip address 10.10.10.1 255.255.255.252
+no shutdown
+
 
 <img src="https://i.imgur.com/3ZvF3rI.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
