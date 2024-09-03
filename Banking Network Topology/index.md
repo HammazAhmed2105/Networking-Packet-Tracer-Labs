@@ -285,4 +285,8 @@ Click on the email server, Desktop, IP Configuration, and set the IPv4 as 192.16
 
 <img src="https://i.imgur.com/BFCfHdp.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
+## Setting up the DHCP Server
+We need to make sure the below DHCP Server allocates IP addresses to all other devices in the topology.
+
+<img src="https://i.imgur.com/PKFndrn.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
