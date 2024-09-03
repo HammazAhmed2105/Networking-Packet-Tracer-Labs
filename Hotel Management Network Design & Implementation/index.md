@@ -153,3 +153,28 @@ To set this up, we will need to create sub-interfaces on the router and assign a
 
 ### For VLAN 80
 <img src="https://i.imgur.com/maibNyi.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+
+# Setting Up Inter-VLAN Routing
+
+The setup is exactly similar for all other routers and interfaces. I have a habit of setting up the default gateway as the first usable IP address.
+
+## Configuration Steps
+
+The setup for each VLAN on the routers is similar. For each VLAN, use the following commands to configure the sub-interfaces:
+
+```plaintext
+interface GigabitEthernet0/x.VLAN
+encapsulation dot1Q VLAN_ID
+ip address IP_ADDRESS SUBNET_MASK
+no shutdown
+```
+<img src="https://i.imgur.com/GQ46bVO.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+
+I did some pings and everything works.
+<img src="https://i.imgur.com/KvsSMWP.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+
+One thing to notice is we still cannot communicate with devices in other vlans. To solve this we need to enable ospf on the routers.
+
+## Configuing OSPF
+For R1 we see its connected to 5 networks.
+
