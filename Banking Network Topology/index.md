@@ -194,7 +194,7 @@ exit
 # Exit configuration mode and save the configuration
 exit
 wr
-
+```
 
 ## IP Addressing Scheme
 
