@@ -261,3 +261,16 @@ Before configuring IP addresses on L3 interfaces we need to use the command “n
 How to know which networks will be advertised by the routers and switches? A simple trick you can use is see how many networks they are connecting to.
 
 <img src="https://i.imgur.com/PK7LwIC.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+### OSPF Configuration for R1
+
+Configure OSPF on R1 with the following commands:
+
+```plaintext
+Router ospf 10
+network 10.10.10.0 0.0.0.3 area 0
+network 10.10.10.4 0.0.0.3 area 0
+network 10.10.10.16 0.0.0.3 area 0
+network 10.10.10.28 0.0.0.3 area 0
+network 10.10.10.32 0.0.0.3 area 0
+
+<img src="https://i.imgur.com/AxCH4v6.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
