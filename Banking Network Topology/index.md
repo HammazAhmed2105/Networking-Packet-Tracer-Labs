@@ -134,3 +134,38 @@ wr
 For all access layer switches the port inside purple circle will be access port, and the other two will be trunk ports.
 Commands are simple as shown below.
 
+ <img src="https://i.imgur.com/6PycTGc.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+ ## Port Security Configuration
+
+For all access layer switches, configure port security with a maximum of 2 MAC addresses, using sticky MAC address learning, and set the violation mode to shutdown.
+
+### Configuration Commands
+
+```plaintext
+# Enter privileged exec mode
+en
+conf t
+
+# Select the interface to configure port security (e.g., FastEthernet0/1)
+interface FastEthernet0/1
+switchport port-security
+switchport port-security maximum 2
+switchport port-security mac-address sticky
+switchport port-security violation shutdown
+exit
+
+# Repeat the above configuration for additional interfaces as needed
+# Example for FastEthernet0/2
+interface FastEthernet0/2
+switchport port-security
+switchport port-security maximum 2
+switchport port-security mac-address sticky
+switchport port-security violation shutdown
+exit
+
+# Exit configuration mode and save the configuration
+exit
+wr
+ <img src="https://i.imgur.com/riJgecK.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
