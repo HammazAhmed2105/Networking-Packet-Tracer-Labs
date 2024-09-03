@@ -23,7 +23,7 @@ Our final router connection will look like this:
   <img src="https://i.imgur.com/MdIEFDl.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 3. Our final topology, before configuring anything, looks like this:
- <img src="https://i.imgur.com/qU3iKMj.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+ <img src="https://i.imgur.com/qU3iKMj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
  
 
 4. Going back to point 1, we need to turn on the interfaces and enable the clock rate on the correct ones. 
