@@ -249,3 +249,9 @@ wr
 | 13  | 10.10.10.48      | 255.255.255.252    |
 | 14  | 10.10.10.52      | 255.255.255.252    |
 
+
+<img src="https://i.imgur.com/dzo1o77.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+Before configuring IP addresses on L3 interfaces we need to use the command “no switchport” on the router-facing interfaces, to make that interface a “Layer 3 Interface”.
+
+<img src="https://i.imgur.com/KJQGiTk.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
