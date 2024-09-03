@@ -272,5 +272,5 @@ network 10.10.10.4 0.0.0.3 area 0
 network 10.10.10.16 0.0.0.3 area 0
 network 10.10.10.28 0.0.0.3 area 0
 network 10.10.10.32 0.0.0.3 area 0
-
+```
 <img src="https://i.imgur.com/AxCH4v6.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
