@@ -365,7 +365,7 @@ interface vlan 120
  ip address 192.168.12.193 255.255.255.192
  exit
 Make sure to replace 192.168.12.197 with the IP address of your DHCP server if it differs. The ip helper-address command ensures that DHCP requests from clients in one subnet are forwarded to the DHCP server located in another subnet.
-
+```
 <img src="https://i.imgur.com/G5RgSw6.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 Now you must go manually on each PC, go to config tab and choose DHCP instead of static, so ip addresses can be assigned.
