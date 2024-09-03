@@ -100,6 +100,68 @@ Int g1/0/2 should be connected with VLAN 90, and the other int with VLAN 100.
 <img src="https://i.imgur.com/AZJmmOv.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 See the below image to understand which interface will be assigned ip addresses, which will have trunk config, and which will be used for inter-vlan routing.
+
 <img src="https://i.imgur.com/K9eG2cC.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+## Network Configurations
+
+### Configuring IP Addresses on Serial Interfaces
+
+1. **Main Campus Routers:**
+   - Configure IP addresses on the serial interfaces of the main campus routers.
+
+2. **Serial Interface Configuration:**
+   - For the serial interfaces `se0/0/1` and `se0/0/0`, use the following commands:
+
+   ```bash
+   Router(config)# interface Serial0/0/0
+   Router(config-if)# ip address 10.0.0.1 255.255.255.252
+   Router(config-if)# no shutdown
+
+   Router(config)# interface Serial0/0/1
+   Router(config-if)# ip address 10.0.0.5 255.255.255.252
+   Router(config-if)# no shutdown
+
+<img src="https://i.imgur.com/bXy4tR7.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+The cloud router is connected to a server on the other end so we will configure ip address for both.
+
+## Server Config
+
+We need to assign the ip address to server via static method.
+
+<img src="https://i.imgur.com/64B2RUm.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+Now we configure inter-vlan routing
+Branch campus router.
+Commands for vlan 90 and 100. On router gig 0/0 interface
+
+<img src="https://i.imgur.com/mWdjsKT.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+I took the first ip address of the subnet. This will be used as the default fateway on the rouer for that vlan.
+We will also configure DHCP server to let the end devices choose their ip addresses.
 
 
+<img src="https://i.imgur.com/tUH4c3F.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+## Configuring RIP
+
+## Network Configurations
+
+### Configuring RIP on Branch Campus Router
+
+To enable communication between devices connected to the main branch router and devices in the branch network, configure RIP (Routing Information Protocol) on the branch campus router. RIP will advertise the networks connected to the branch campus router.
+
+1. **Enable RIP Routing:**
+   - Enter RIP configuration mode and specify the networks to be advertised.
+
+2. **Commands:**
+
+   ```bash
+   Router(config)# router rip
+   Router(config-router)# version 2
+   Router(config-router)# network <network1>
+   Router(config-router)# network <network2>
+   Router(config-router)# network <network3>
+
+
+<img src="https://i.imgur.com/7ZIEip5.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
