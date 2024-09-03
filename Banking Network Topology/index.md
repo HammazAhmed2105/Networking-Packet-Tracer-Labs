@@ -255,3 +255,8 @@ wr
 Before configuring IP addresses on L3 interfaces we need to use the command “no switchport” on the router-facing interfaces, to make that interface a “Layer 3 Interface”.
 
 <img src="https://i.imgur.com/KJQGiTk.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/T4VbjEM.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+## Configuring OSPF on All Routers and Layer 3 Switches
+How to know which networks will be advertised by the routers and switches? A simple trick you can use is see how many networks they are connecting to.
+<img src="https://i.imgur.com/PK7LwIC.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
