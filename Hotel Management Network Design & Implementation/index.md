@@ -1,58 +1,96 @@
+# Vic Modern Hotel Network Setup
 
-## Steps to Configure the Network
+## Step-by-Step Configuration
 
-### 1. Setup Routers and Serial Interfaces
-- Place three routers in the IT department server room.
-- Enable serial interfaces by adding "HWIC-2T" modules.
-- Connect routers using serial DCE cables.
-- Set clock rate on serial DCE interfaces and bring up the interfaces using `no shutdown`.
+### 1. Enable Serial Interfaces on Routers
 
-### 2. Connect Switches to Routers
-- Each floor has one switch connected to the respective router.
-- Place the required number of end devices (PCs, printers, Wi-Fi access points).
+To connect the routers using serial DCE cables, follow these steps:
 
-### 3. Configure VLANs and Inter-VLAN Routing
-- Create VLANs for each department.
-- Configure access ports for VLANs and trunk ports between routers and switches.
-- Setup inter-VLAN routing using sub-interfaces on the routers.
-  
-  Example for VLAN 80:
-  ```shell
-  interface g0/0.80
-  encapsulation dot1q 80
-  ip address 192.168.8.1 255.255.255.0
-  ```
-- Configure DHCP for each VLAN on the routers.
+1. **Turn Off the Router:**
+   - Click on the router.
+   - Click the circle above the green line to turn off the router.
 
-### 4. Configure OSPF
-- Enable OSPF on all routers to allow communication between different VLANs.
-  
-  Example for R1:
-  ```shell
-  router ospf 2
-  network 10.10.10.0 0.0.0.3 area 0
-  network 192.168.8.0 0.0.0.255 area 0
-  ```
-  
-### 5. Configure SSH on Routers
-- Configure SSH on all routers for secure remote access.
+2. **Add HWIC-2T Module:**
+   - Drag and drop the “HWIC-2T” module from the left column onto the router.
 
-  Example commands:
-  ```shell
-  hostname R1
-  ip domain-name vicmodernhotel.local
-  username admin password admin123
-  crypto key generate rsa
-  line vty 0 15
-  login local
-  transport input ssh
-  ```
+3. **Turn On the Router:**
+   - Click the circle above the green line to turn the router back on.
 
-### 6. Test Network Connectivity
-- Verify inter-VLAN communication with ping tests.
-- Ensure DHCP is working and devices are getting the correct IP addresses.
+4. **Repeat for All Routers:**
+   - Perform the above steps for each router.
 
-### 7. Final Configuration and Documentation
-- Save all configurations on routers and switches.
-- Document the final network setup.
+### 2. Connect Routers Using Serial DCE Cables
 
+1. **View Serial Interfaces:**
+   - Click on the router to see the serial interfaces.
+
+2. **Connect Routers:**
+   - Use serial DCE cables to connect the routers:
+     - **Router 1 to Router 2:** Use the `10.10.10.0/30` network.
+     - **Router 2 to Router 3:** Use the `10.10.10.4/30` network.
+     - **Router 1 to Router 3:** Use the `10.10.10.8/30` network.
+
+**Note:** Serial interfaces provide a physical layer connection that can be used to connect routers across long distances.
+
+### 3. Connect Switches to Routers
+
+1. **Connect Each Floor’s Switch to Routers:**
+   - **1st Floor Switch** to Router 1.
+   - **2nd Floor Switch** to Router 2.
+   - **3rd Floor Switch** to Router 3.
+
+### 4. Configure Printers and End Devices
+
+#### 1st Floor Configuration
+
+1. **Add Printers:**
+   - Place one printer for each department (Reception, Store, Logistics).
+
+2. **Add End Devices:**
+   - Add the appropriate number of end devices (PCs, laptops) for each department.
+
+3. **Wi-Fi Configuration:**
+   - Place a Wi-Fi access point on the 1st floor.
+   - Connect the Wi-Fi access point to the floor’s switch.
+
+#### 2nd Floor Configuration
+
+1. **Add Printers:**
+   - Place one printer for each department (Finance, HR, Sales).
+
+2. **Add End Devices:**
+   - Add the appropriate number of end devices (PCs, laptops) for each department.
+
+3. **Wi-Fi Configuration:**
+   - Place a Wi-Fi access point on the 2nd floor.
+   - Connect the Wi-Fi access point to the floor’s switch.
+
+#### 3rd Floor Configuration
+
+1. **Add Printers:**
+   - Place one printer for each department (Admin, IT).
+
+2. **Add End Devices:**
+   - Add the appropriate number of end devices (PCs, laptops) for each department.
+
+3. **Wi-Fi Configuration:**
+   - Place a Wi-Fi access point on the 3rd floor.
+   - Connect the Wi-Fi access point to the floor’s switch.
+
+### 5. Label Everything
+
+- **Ensure All Devices Are Labeled Correctly:**
+  - Routers, switches, end devices, printers, and Wi-Fi access points.
+
+### Diagram
+
+Your network diagram should now look similar to the following:
+
+- **Router Connections:**
+  - Routers are connected with serial DCE cables.
+- **Floor Layouts:**
+  - Switches connected to routers.
+  - Printers and end devices configured in each department.
+  - Wi-Fi access points connected to each floor’s switch.
+
+<img src="https://i.imgur.com/qU3iKMj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
