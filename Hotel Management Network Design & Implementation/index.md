@@ -177,3 +177,62 @@ One thing to notice is we still cannot communicate with devices in other vlans. 
 ## Configuing OSPF
 For R1 we see its connected to 5 networks.
 
+<img src="https://i.imgur.com/orD0pIH.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+
+We use the command, router ospf 2 followed by 
+
+<img src="https://i.imgur.com/jPJ3gS3.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+
+For R2 and R3 the commnads are similar, except we need to notice which networks they are connected to.
+
+# Configuring SSH on Routers
+
+## R1 Configuration Steps
+
+1. **Configure the hostname of the router:**
+
+    ```plaintext
+    Router(config)# hostname R1
+    ```
+
+2. **Configure the domain name:**
+
+    ```plaintext
+    R1(config)# ip domain-name example.com
+    ```
+
+3. **Configure username and password:**
+
+    ```plaintext
+    R1(config)# username admin password your_password
+    ```
+
+4. **Generate the encryption keys:**
+
+    ```plaintext
+    R1(config)# crypto key generate rsa
+    ```
+
+    When prompted, specify the number of bits for the key (e.g., 2048).
+
+5. **Configure the VTY lines:**
+
+    ```plaintext
+    R1(config)# line vty 0 15
+    ```
+
+6. **Set the login method to local:**
+
+    ```plaintext
+    R1(config-line)# login local
+    ```
+
+7. **Allow SSH connections:**
+
+    ```plaintext
+    R1(config-line)# transport input ssh
+    ```
+
+This setup ensures that SSH is configured for secure remote access to the router. Adjust the domain name, username, and password as needed for your specific environment.
+
+<img src="https://i.imgur.com/VoHmoQm.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
