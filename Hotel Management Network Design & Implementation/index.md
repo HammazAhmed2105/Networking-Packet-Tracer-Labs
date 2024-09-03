@@ -168,7 +168,6 @@ encapsulation dot1Q VLAN_ID
 ip address IP_ADDRESS SUBNET_MASK
 no shutdown
 ```
-<img src="https://i.imgur.com/GQ46bVO.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
 I did some pings and everything works.
 <img src="https://i.imgur.com/KvsSMWP.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
