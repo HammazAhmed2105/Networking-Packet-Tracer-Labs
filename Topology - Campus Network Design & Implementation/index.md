@@ -66,3 +66,31 @@ Same config is to be done for all other routers.
 
 Additionally, I also renamed the vlans to their respective department. Simply type vlan followed by vlan number, and in the next command use name “name”.
 We must also add each interface of the switch in main campus to the departments respective vlan.
+Switch(config)# vlan 10
+Switch(config-vlan)# name Admin_VLAN
+
+Switch(config)# vlan 20
+Switch(config-vlan)# name HR_VLAN
+
+# Continue for other VLANs...
+
+
+<img src="https://i.imgur.com/0UQravU.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+## Network Configurations
+
+### Step 3 – Configuring VLANs
+
+1. **VLAN Configuration:**
+   - VLANs have been configured on all switches. Below are the commands used for configuring VLAN 10 as an example, including VLAN naming.
+
+2. **Commands for VLAN 10:**
+
+   ```bash
+   Switch(config)# vlan 10
+   Switch(config-vlan)# name Admin_VLAN
+
+   Switch(config)# interface range f0/1-24
+   Switch(config-if-range)# switchport mode access
+   Switch(config-if-range)# switchport access vlan 10
+
+<img src="https://i.imgur.com/56iuA3Y.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
