@@ -236,3 +236,5 @@ For R2 and R3 the commnads are similar, except we need to notice which networks 
 This setup ensures that SSH is configured for secure remote access to the router. Adjust the domain name, username, and password as needed for your specific environment.
 
 <img src="https://i.imgur.com/VoHmoQm.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+
+Thats all fo this topology. You can try pinging different devices to check if they work.
