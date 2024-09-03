@@ -314,3 +314,54 @@ These were the configurations for the Mgt pool.
 For every pool, the default gateway and starting IP address will change accordingly.
 <img src="https://i.imgur.com/vax2tqc.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
+### Configuring Inter-VLAN Routing and IP Helper-Address on Layer 3 Switches
+
+To set up Inter-VLAN routing and configure the `ip helper-address` on Layer 3 switches, follow these commands. We are assuming that the VLANs are configured and the DHCP server IP is `192.168.12.197`.
+
+#### For VLAN 70
+```bash
+interface vlan 70
+ no shutdown
+ ip address 192.168.11.129 255.255.255.192
+ ip helper-address 192.168.12.197
+ exit
+For VLAN 80
+bash
+Copy code
+interface vlan 80
+ no shutdown
+ ip address 192.168.11.193 255.255.255.192
+ ip helper-address 192.168.12.197
+ exit
+For VLAN 90
+bash
+Copy code
+interface vlan 90
+ no shutdown
+ ip address 192.168.12.1 255.255.255.192
+ ip helper-address 192.168.12.197
+ exit
+For VLAN 100
+bash
+Copy code
+interface vlan 100
+ no shutdown
+ ip address 192.168.12.65 255.255.255.192
+ ip helper-address 192.168.12.197
+ exit
+For VLAN 110
+bash
+Copy code
+interface vlan 110
+ no shutdown
+ ip address 192.168.12.129 255.255.255.192
+ ip helper-address 192.168.12.197
+ exit
+For VLAN 120
+bash
+Copy code
+interface vlan 120
+ no shutdown
+ ip address 192.168.12.193 255.255.255.192
+ exit
+Make sure to replace 192.168.12.197 with the IP address of your DHCP server if it differs. The ip helper-address command ensures that DHCP requests from clients in one subnet are forwarded to the DHCP server located in another subnet.
