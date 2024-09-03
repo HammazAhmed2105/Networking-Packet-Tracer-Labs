@@ -96,8 +96,23 @@ Your network diagram should now look similar to the following:
 <img src="https://i.imgur.com/9WMvy19.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 One thing to note is, we must enable clock rate on Serial Dce interfaces. If we hover over the red lines we see the interface name. if it has a clock beside it then we enable it on that interface only.
+
 <img src="https://i.imgur.com/nKpDqOw.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 Before enabling the clock rate, we must also use no shutdown since routers interfaces are shutdown by default.
 For R3
+
 <img src="https://i.imgur.com/Ved0tsg.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+For R1
+No config needed except turning the interfaces on
+For R2
+The config is almost same
+Now we setup vlans. Since there are diff vlan, we will configure them using access port, but the link between router and switch will be trunk.
+For respective interfaces we use switcport mode accesss, followed by sw access vlan “number”
+For switch one f0/1 is connected to router. Hence it’s the trunk link.
+Do the same for all other switches.
+Configuring ip addresses in router.
+Now we have /30 notations on the routers, so that smeans there  will be 2 ip addresses. 
+
+<img src="https://i.imgur.com/3ZvF3rI.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
