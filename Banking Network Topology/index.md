@@ -81,5 +81,6 @@ service password-encryption
 
 Note: I will be copy-pasting these commands on the switch, hence I'll use the same hostname on all.
 ```
+
 <img src="https://i.imgur.com/adyrzZo.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
