@@ -20,13 +20,11 @@ Our final router connection will look like this:
 - **Router 2** <-> **Router 3** (via crossover cable)
 <img src="https://i.imgur.com/ObCDZ81.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 2. Now, connect these routers to the **Layer 3 switch**. Ensure redundancy by connecting them to another router as shown below.
+  <img src="https://i.imgur.com/MdIEFDl.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 3. Our final topology, before configuring anything, looks like this:
-
-   - **Router 1** <-> **Router 2** <-> **Layer 3 Switch**
-   - **Router 3** <-> **Router 4** <-> **Layer 3 Switch**
-   - **Router 1** <-> **Router 4** (via crossover cable)
-   - **Router 2** <-> **Router 3** (via crossover cable)
+ <img src="https://i.imgur.com/qU3iKMj.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+ 
 
 4. Going back to point 1, we need to turn on the interfaces and enable the clock rate on the correct ones. 
 
