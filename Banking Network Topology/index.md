@@ -168,4 +168,29 @@ exit
 exit
 wr
  <img src="https://i.imgur.com/riJgecK.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+The above commands are done on all layer 2 switches.
 
+The below interfaces on the L3 switch will be trunk ports too.
+
+ <img src="https://i.imgur.com/i05gEVF.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+### Configuration Commands
+
+```plaintext
+# Enter privileged exec mode
+en
+conf t
+
+# Configure the interface as a trunk port
+interface GigabitEthernet1/0/2
+switchport mode trunk
+exit
+
+# Repeat the above configuration for additional trunk interfaces as needed
+# Example for GigabitEthernet1/0/3
+interface GigabitEthernet1/0/3
+switchport mode trunk
+exit
+
+# Exit configuration mode and save the configuration
+exit
+wr
