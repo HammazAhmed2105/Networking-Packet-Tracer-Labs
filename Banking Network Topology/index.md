@@ -29,8 +29,9 @@ Our final router connection will look like this:
 4. Going back to point 1, we need to turn on the interfaces and enable the clock rate on the correct ones. 
 
    - For the interfaces that have a clock symbol, the clock rate needs to be enabled.
-
+      <img src="https://i.imgur.com/jKSTPNa.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
    - Alternatively, you can click on the router, navigate to the `Config` tab, and turn on the interfaces as shown below. However, using CLI commands is recommended.
+      <img src="https://i.imgur.com/2itX7I9.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 5. Clock rate configuration:
 
