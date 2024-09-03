@@ -140,3 +140,16 @@ And se0/2/1 gets 10.10.10.9 since it has the network 10.10.10.8/30
 
 <img src="https://i.imgur.com/ni3szVG.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
+We go on router and use the command ip address 10.10.10.9 followed by subnet mask which is 255.255.255.252
+Do this for all 3 routers
+Once done setting the ip addresses, we can check which interface has which ip add using do s hip int br
+
+
+# Setting Up Inter-VLAN Routing
+
+To set this up, we will need to create sub-interfaces on the router and assign an IP address (default gateway) according to the given range.
+
+## First Floor Configuration
+
+### For VLAN 80
+<img src="https://i.imgur.com/maibNyi.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
