@@ -84,3 +84,51 @@ Note: I will be copy-pasting these commands on the switch, hence I'll use the sa
 
 <img src="https://i.imgur.com/adyrzZo.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
+Here's the configuration for L3 Switch in GitHub code format, including SSH configuration:
+
+```markdown
+## L3 Switch Configuration
+
+The steps are similar to the previous configurations, but we also add SSH configuration for L3 switches and routers.
+
+```plaintext
+# Enter privileged exec mode
+en
+conf t
+
+# Configure hostname and banner
+hostname L3Switch
+banner motd "This is Core Router"
+
+# Access console line config mode and set a password
+line console 0
+password hammaz
+login
+exit
+
+# Disable domain IP lookup and encrypt passwords
+no ip domain-lookup
+enable password hammaz
+service password-encryption
+
+# Configure SSH settings
+ip domain-name cisco.net
+username hammaz password hammaz1
+crypto key generate rsa
+1024
+
+# Configure VTY lines for SSH access
+line vty 0 15
+login local
+transport input ssh
+
+# Exit configuration mode and save the configuration
+exit
+exit
+wr
+```
+
+This configuration ensures that your L3 switch is set up with a hostname, console and VTY passwords, SSH access, and security settings, all formatted for easy use on GitHub.
+
+
+
