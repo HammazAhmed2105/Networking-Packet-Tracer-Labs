@@ -275,3 +275,14 @@ network 10.10.10.28 0.0.0.3 area 0
 network 10.10.10.32 0.0.0.3 area 0
 ```
 <img src="https://i.imgur.com/AxCH4v6.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+For L3 switch the commands are the same, just the networks will change. Be sure you use the command “ip routing” before enabling ospf on the L3 switches.
+
+<img src="https://i.imgur.com/B313QGb.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+## Setting up Statics ip addresses to server room devices
+Click on the email server, Desktop, IP Configuration, and set the IPv4 as 192.168.12.196, 197 and 198 for each device, subnet mask as 255.255.255.192, and default gateway as 192.168.12.193/.
+
+<img src="https://i.imgur.com/BFCfHdp.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+
