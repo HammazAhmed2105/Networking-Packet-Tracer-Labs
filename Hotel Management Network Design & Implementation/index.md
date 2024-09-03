@@ -131,6 +131,6 @@ For Router 1:
 interface Serial0/0
 ip address 10.10.10.1 255.255.255.252
 no shutdown
-
+```
 
 <img src="https://i.imgur.com/3ZvF3rI.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
