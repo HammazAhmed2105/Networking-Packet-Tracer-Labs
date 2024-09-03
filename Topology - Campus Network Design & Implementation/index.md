@@ -165,3 +165,7 @@ To enable communication between devices connected to the main branch router and 
 
 
 <img src="https://i.imgur.com/7ZIEip5.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+Final Topology
+
+<img src="https://i.imgur.com/4kCP71q.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
