@@ -94,3 +94,10 @@ Your network diagram should now look similar to the following:
   - Wi-Fi access points connected to each floor’s switch.
 
 <img src="https://i.imgur.com/9WMvy19.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+One thing to note is, we must enable clock rate on Serial Dce interfaces. If we hover over the red lines we see the interface name. if it has a clock beside it then we enable it on that interface only.
+<img src="https://i.imgur.com/nKpDqOw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+Before enabling the clock rate, we must also use no shutdown since routers interfaces are shutdown by default.
+For R3
+<img src="https://i.imgur.com/Ved0tsg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
