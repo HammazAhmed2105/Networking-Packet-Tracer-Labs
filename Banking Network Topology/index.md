@@ -44,3 +44,42 @@ Our final router connection will look like this:
    - Drag and drop the power supply into any empty slot of the Layer 3 switch.
    - Ensure that the power supply is securely attached before proceeding with any further configurations.
   <img src="https://i.imgur.com/kYcADgg.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+  Here's the configuration for hostnames, line console, vty passwords, and disabling domain IP lookup in GitHub code format:
+
+```markdown
+## Configuring Hostnames, Line Console, VTY Passwords, and Disabling Domain IP Lookup
+
+All commands will be executed on the switch.
+
+```plaintext
+# Enter privileged exec mode
+en
+conf t
+
+# Configure hostname and banner
+hostname Switch
+banner motd "This is Layer 2 Switch"
+
+# Access console line config mode and set a password
+line console 0
+password hammaz
+login
+exit
+
+# Configure VTY lines for remote access (Telnet/SSH) and set a password
+line vty 0 15
+password hammaz
+login
+exit
+
+# Disable domain IP lookup and encrypt passwords
+no ip domain-lookup
+enable password hammaz
+service password-encryption
+```
+
+Note: I will be copy-pasting these commands on the switch, hence I'll use the same hostname on all.
+```
+<img src="https://i.imgur.com/adyrzZo.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
