@@ -38,3 +38,9 @@ Our final router connection will look like this:
    - The clock rate can be easily configured on interfaces connected via DCE cables.
    - Interfaces with a clock symbol indicate the need to enable the clock rate.
 
+## Layer 3 Switch Configurations
+
+1. **Add Power Supply to Each Layer 3 Switch**
+   - Drag and drop the power supply into any empty slot of the Layer 3 switch.
+   - Ensure that the power supply is securely attached before proceeding with any further configurations.
+  <img src="https://i.imgur.com/kYcADgg.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
