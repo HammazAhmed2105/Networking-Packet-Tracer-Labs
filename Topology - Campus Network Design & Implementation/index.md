@@ -63,3 +63,6 @@ Same config is to be done for all other routers.
 <img src="https://i.imgur.com/LqYXKG2.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <img src="https://i.imgur.com/zk3usIR.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+Additionally, I also renamed the vlans to their respective department. Simply type vlan followed by vlan number, and in the next command use name “name”.
+We must also add each interface of the switch in main campus to the departments respective vlan.
