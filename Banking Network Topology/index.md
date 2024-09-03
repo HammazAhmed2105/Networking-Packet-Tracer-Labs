@@ -290,3 +290,27 @@ We need to make sure the below DHCP Server allocates IP addresses to all other d
 
 <img src="https://i.imgur.com/PKFndrn.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
+### Enabling the DHCP Server
+
+Follow these steps to enable the DHCP server:
+
+1. **Click on the DHCP Server**: Locate and select the DHCP server in your network diagram or configuration interface.
+
+2. **Navigate to Services**: Go to the 'Services' tab or menu within the DHCP server settings.
+
+3. **Select DHCP**: Click on the 'DHCP' option to access the DHCP settings.
+
+4. **Turn On the DHCP Server**: Click the 'On' button to enable the DHCP server.
+
+Ensure that the DHCP server is properly configured to assign IP addresses to devices within your network.
+<img src="https://i.imgur.com/Tm2ThJA.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+Now we will create pools for every department.
+For each department, I will be taking the first usable address as the default gateway.
+These were the configurations for the Mgt pool. 
+<img src="https://i.imgur.com/EwjF4X7.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+
+For every pool, the default gateway and starting IP address will change accordingly.
+<img src="https://i.imgur.com/vax2tqc.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
