@@ -93,4 +93,4 @@ Your network diagram should now look similar to the following:
   - Printers and end devices configured in each department.
   - Wi-Fi access points connected to each floor’s switch.
 
-<img src="https://i.imgur.com/qU3iKMj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/9WMvy19.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
