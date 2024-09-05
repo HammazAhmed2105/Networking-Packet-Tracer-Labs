@@ -123,6 +123,7 @@ To start off we are told HQ and branch should have 1 core router each, each core
 
 ### For the Core routers, the configuration is exactly the same as L3 switches, except the host name should be changed accordingly.
 
+# -----
 
 
 
