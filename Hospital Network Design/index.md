@@ -121,6 +121,10 @@ To start off we are told HQ and branch should have 1 core router each, each core
 6. **HQ-L3-Switch(config-line)#transport input ssh**
     Restricts remote access to SSH only (disabling Telnet).
 
+### For the Core routers, the configuration is exactly the same as L3 switches, except the host name should be changed accordingly.
+
+
+
 
 
 
