@@ -59,7 +59,57 @@ To start off we are told HQ and branch should have 1 core router each, each core
 - For this step we will be configuring hostnames, console password, enable password, banner messages, and disable IP domain lookup, on Layer 2 and Lyaer 3 Switches.
 
 <img src="https://i.imgur.com/4g527Au.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+- Explanation for each command is shown below.
+- Switch#conf t 
+# Enters global configuration mode.
 
+Switch(config)#hos 
+# Incomplete command, likely a shorthand for entering the hostname.
+
+Switch(config)#hostname MLOC-Switch 
+# Sets the hostname of the switch to "MLOC-Switch."
+
+MLOC-Switch(config)#enable password hammaz 
+# Sets the privileged EXEC mode password to "hammaz."
+
+MLOC-Switch(config)#no ip dom 
+# Incomplete command, should be "no ip domain lookup."
+
+MLOC-Switch(config)#no ip domain lookup 
+# Disables DNS lookup when a command is mistyped.
+
+MLOC-Switch(config)#banner motd #No illegal access# 
+# Sets a Message of the Day (MOTD) banner to display "No illegal access" on login.
+
+MLOC-Switch(config)#lin 
+# Incomplete command, likely referring to "line console."
+
+MLOC-Switch(config)#line con 
+# Incomplete command, likely referring to "line console 0."
+
+MLOC-Switch(config)#line console 0 
+# Enters configuration for the console line (physical access port).
+
+MLOC-Switch(config-line)#pass 
+# Incomplete command, likely referring to "password."
+
+MLOC-Switch(config-line)#password hammaz 
+# Sets the console line password to "hammaz."
+
+MLOC-Switch(config-line)#login 
+# Enables login using the set password for the console.
+
+MLOC-Switch(config-line)#ex 
+# Ambiguous command; doesn't specify what to exit or execute.
+
+MLOC-Switch(config-line)#exi 
+# Incomplete command, likely referring to "exit."
+
+MLOC-Switch(config-line)#exit 
+# Exits console line configuration mode.
+
+MLOC-Switch(config)#do wr 
+# Saves the running configuration to the startup configuration.
 
 
 
