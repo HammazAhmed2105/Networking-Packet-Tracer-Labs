@@ -59,7 +59,8 @@ To start off we are told HQ and branch should have 1 core router each, each core
 - For this step we will be configuring hostnames, console password, enable password, banner messages, and disable IP domain lookup, on Layer 2 and Lyaer 3 Switches.
 
 <img src="https://i.imgur.com/4g527Au.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
-- Explanation for each command is shown below.
+- Explanation for each command
+
 1. Switch#conf t 
     **Enters global configuration mode.**
 
