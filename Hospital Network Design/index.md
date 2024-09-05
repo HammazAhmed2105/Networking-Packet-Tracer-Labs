@@ -29,3 +29,32 @@ To start off we are told HQ and branch should have 1 core router each, each core
 - First we will turn on the Serial Interfaces in the 2 ISP routers, and tunr on all interfaces on the Core Routers. Click on the router, go to config, and turn on the previosu said interfaces.
 
 <img src="https://i.imgur.com/o510fXs.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+## Turning on all the L3 Switches
+- For L3 switches, click on it, drag and drop the AC power supply. Thats all.
+
+<img src="https://i.imgur.com/kPKCP0B.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
