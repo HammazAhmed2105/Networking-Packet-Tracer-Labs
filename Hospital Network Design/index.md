@@ -16,3 +16,7 @@ To start off we are told HQ and branch should have 1 core router each, each core
 
 - As shown below, we can see the serial interfaces now.
 <img src="https://i.imgur.com/rMFpC5f.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+- Our router connections will look like below.
+
+<img src="https://i.imgur.com/TPa41hK.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
