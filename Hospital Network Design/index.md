@@ -60,56 +60,36 @@ To start off we are told HQ and branch should have 1 core router each, each core
 
 <img src="https://i.imgur.com/4g527Au.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 - Explanation for each command is shown below.
-- Switch#conf t 
-# Enters global configuration mode.
+1. Switch#conf t 
+   # Enters global configuration mode.
 
-Switch(config)#hos 
-# Incomplete command, likely a shorthand for entering the hostname.
+2. Switch(config)#hostname MLOC-Switch 
+   # Sets the hostname of the switch to "MLOC-Switch."
 
-Switch(config)#hostname MLOC-Switch 
-# Sets the hostname of the switch to "MLOC-Switch."
+3. MLOC-Switch(config)#enable password hammaz 
+   # Sets the privileged EXEC mode password to "hammaz."
 
-MLOC-Switch(config)#enable password hammaz 
-# Sets the privileged EXEC mode password to "hammaz."
+4. MLOC-Switch(config)#no ip domain lookup 
+   # Disables DNS lookup when a command is mistyped.
 
-MLOC-Switch(config)#no ip dom 
-# Incomplete command, should be "no ip domain lookup."
+5. MLOC-Switch(config)#banner motd #No illegal access# 
+   # Sets a Message of the Day (MOTD) banner to display "No illegal access" on login.
 
-MLOC-Switch(config)#no ip domain lookup 
-# Disables DNS lookup when a command is mistyped.
+6. MLOC-Switch(config)#line console 0 
+   # Enters configuration for the console line (physical access port).
 
-MLOC-Switch(config)#banner motd #No illegal access# 
-# Sets a Message of the Day (MOTD) banner to display "No illegal access" on login.
+7. MLOC-Switch(config-line)#password hammaz 
+   # Sets the console line password to "hammaz."
 
-MLOC-Switch(config)#lin 
-# Incomplete command, likely referring to "line console."
+8. MLOC-Switch(config-line)#login 
+   # Enables login using the set password for the console.
 
-MLOC-Switch(config)#line con 
-# Incomplete command, likely referring to "line console 0."
+9. MLOC-Switch(config-line)#exit 
+   # Exits console line configuration mode.
 
-MLOC-Switch(config)#line console 0 
-# Enters configuration for the console line (physical access port).
+10. MLOC-Switch(config)#do wr 
+    # Saves the running configuration to the startup configuration.
 
-MLOC-Switch(config-line)#pass 
-# Incomplete command, likely referring to "password."
-
-MLOC-Switch(config-line)#password hammaz 
-# Sets the console line password to "hammaz."
-
-MLOC-Switch(config-line)#login 
-# Enables login using the set password for the console.
-
-MLOC-Switch(config-line)#ex 
-# Ambiguous command; doesn't specify what to exit or execute.
-
-MLOC-Switch(config-line)#exi 
-# Incomplete command, likely referring to "exit."
-
-MLOC-Switch(config-line)#exit 
-# Exits console line configuration mode.
-
-MLOC-Switch(config)#do wr 
-# Saves the running configuration to the startup configuration.
 
 
 
