@@ -91,8 +91,9 @@ To start off we are told HQ and branch should have 1 core router each, each core
 10. MLOC-Switch(config)#do wr 
     **Saves the running configuration to the startup configuration.**
 
-
-
+- The configuration is same on all the other switches, except the host name part. So i wrote the commands on Notepad, cahnged it fro each switch and just copy pasted to save time.
+  
+<img src="https://i.imgur.com/WxB8Hbx.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
