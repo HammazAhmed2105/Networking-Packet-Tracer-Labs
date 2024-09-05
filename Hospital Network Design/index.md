@@ -40,6 +40,8 @@ To start off we are told HQ and branch should have 1 core router each, each core
 
 <img src="https://i.imgur.com/69cNL1W.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+# -----
+
 ## Configuration Steps
 1. Basic settings on all devices including setting up ssh on routers and L3 switches
 2. Vlan Assignment plus all access and trunk ports on L2 and L3 switches.
@@ -54,6 +56,7 @@ To start off we are told HQ and branch should have 1 core router each, each core
 11. Default static route
 12. PAT + ACL
 13. Testing config.
+# -----
 
 # Basic settings on all devices and setting up ssh on routers and L3 switches
 - For this step we will be configuring hostnames, console password, enable password, banner messages, and disable IP domain lookup, on Layer 2 and Lyaer 3 Switches.
