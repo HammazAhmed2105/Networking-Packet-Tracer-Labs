@@ -41,7 +41,19 @@ To start off we are told HQ and branch should have 1 core router each, each core
 <img src="https://i.imgur.com/69cNL1W.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 ## Configuration Steps
-1. dwd
+1. Basic settings on all devices and setting up ssh on routers and L3 switches
+2. Vlan Assignment plus all access and trunk ports on L2 and L3 switches.
+3. Switchport security to Finance department
+4. Subnetting and IP Addressing
+5. OSPF on the routers and L3 switches
+6. Static IP addresses to server room
+7. DHCP server device configurations
+8. Inter vlan routing on L3 switches and ip dhcp helper address
+9. Wireless networm config
+10. Site to site IPSec VPN.
+11. Default static route
+12. APT + ACL
+13. Testing config.
 
 
 
