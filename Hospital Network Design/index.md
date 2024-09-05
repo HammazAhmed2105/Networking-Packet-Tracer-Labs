@@ -41,7 +41,7 @@ To start off we are told HQ and branch should have 1 core router each, each core
 <img src="https://i.imgur.com/69cNL1W.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 ## Configuration Steps
-1. Basic settings on all devices and setting up ssh on routers and L3 switches
+1. Basic settings on all devices including setting up ssh on routers and L3 switches
 2. Vlan Assignment plus all access and trunk ports on L2 and L3 switches.
 3. Switchport security to Finance department
 4. Subnetting and IP Addressing
@@ -56,6 +56,8 @@ To start off we are told HQ and branch should have 1 core router each, each core
 13. Testing config.
 
 ## Basic settings on all devices and setting up ssh on routers and L3 switches
+# Basic settings on all devices and setting up ssh on routers and L3 switches
+### Basic settings on all devices and setting up ssh on routers and L3 switches
 - For this step we will be configuring hostnames, console password, enable password, banner messages, and disable IP domain lookup, on Layer 2 and Lyaer 3 Switches.
 
 <img src="https://i.imgur.com/4g527Au.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
@@ -91,10 +93,12 @@ To start off we are told HQ and branch should have 1 core router each, each core
 10. MLOC-Switch(config)#do wr 
     **Saves the running configuration to the startup configuration.**
 
-- The configuration is same on all the other switches, except the host name part. So i wrote the commands on Notepad, cahnged it fro each switch and just copy pasted to save time.
+- The configuration is same on all the other switches, except the host name part. So i wrote the commands on Notepad, changed it for each switch and just copy pasted to save time.
   
 <img src="https://i.imgur.com/WxB8Hbx.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+- Upon checking I realized I forgot to use the command "service password encryption", which encrypts all password. So also include that command at the end.
+  
 
 
 
