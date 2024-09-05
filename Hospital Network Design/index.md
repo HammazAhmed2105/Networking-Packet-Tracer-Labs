@@ -101,28 +101,26 @@ To start off we are told HQ and branch should have 1 core router each, each core
 - For basic settings the commands are same as above, but we also include ssh config commands.
 <img src="https://i.imgur.com/lbHkWEA.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
   
-Below are the commands and basic info on them on how to configure ssh.
+**Below are the commands and basic info on them on how to configure ssh.**
 
-1. HQ-L3-Switch(config)#ip domain name cisco.net
+1. **HQ-L3-Switch(config)#ip domain name cisco.net**
     Sets the domain name of the switch to "cisco.net."
 
-2. HQ-L3-Switch(config)#username hammaz password hammaz
+2. **HQ-L3-Switch(config)#username hammaz password hammaz**
     Creates a local username "hammaz" with the password "hammaz."
 
-3. HQ-L3-Switch(config)#crypto key generate rsa
+3. **HQ-L3-Switch(config)#crypto key generate rsa**
     Generates RSA keys for SSH encryption.
 
-4. How many bits in the modulus [512]: 1024
-    Specifies the key size for the RSA encryption as 1024 bits.
-
-5. HQ-L3-Switch(config)#line vty 0 15
+4. **HQ-L3-Switch(config)#line vty 0 15**
     Configures the virtual terminal (vty) lines 0 through 15 for remote access.
 
-6. HQ-L3-Switch(config-line)#login local
+5. **HQ-L3-Switch(config-line)#login local**
     Requires local username and password for vty login.
 
-7. HQ-L3-Switch(config-line)#transport input ssh
+6. **HQ-L3-Switch(config-line)#transport input ssh**
     Restricts remote access to SSH only (disabling Telnet).
+
 
 
 
