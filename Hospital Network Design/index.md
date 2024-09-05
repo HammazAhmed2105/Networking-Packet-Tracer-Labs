@@ -20,3 +20,5 @@ To start off we are told HQ and branch should have 1 core router each, each core
 - Our router connections will look like below.
 
 <img src="https://i.imgur.com/TPa41hK.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+
