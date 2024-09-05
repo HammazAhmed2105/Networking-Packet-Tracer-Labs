@@ -61,34 +61,34 @@ To start off we are told HQ and branch should have 1 core router each, each core
 <img src="https://i.imgur.com/4g527Au.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 - Explanation for each command is shown below.
 1. Switch#conf t 
-    Enters global configuration mode.
+    **Enters global configuration mode.**
 
 2. Switch(config)#hostname MLOC-Switch 
-   Sets the hostname of the switch to "MLOC-Switch."
+   **Sets the hostname of the switch to "MLOC-Switch."**
 
 3. MLOC-Switch(config)#enable password hammaz 
-   Sets the privileged EXEC mode password to "hammaz."
+   **Sets the privileged EXEC mode password to "hammaz."**
 
 4. MLOC-Switch(config)#no ip domain lookup 
-    Disables DNS lookup when a command is mistyped.
+   **Disables DNS lookup when a command is mistyped.**
 
 5. MLOC-Switch(config)#banner motd #No illegal access# 
-    Sets a Message of the Day (MOTD) banner to display "No illegal access" on login.
+    **Sets a Message of the Day (MOTD) banner to display "No illegal access" on login.**
 
 6. MLOC-Switch(config)#line console 0 
-    Enters configuration for the console line (physical access port).
+    **Enters configuration for the console line (physical access port).**
 
 7. MLOC-Switch(config-line)#password hammaz 
-   Sets the console line password to "hammaz."
+   **Sets the console line password to "hammaz."**
 
 8. MLOC-Switch(config-line)#login 
-    Enables login using the set password for the console.
+    **Enables login using the set password for the console.**
 
 9. MLOC-Switch(config-line)#exit 
-    Exits console line configuration mode.
+    **Exits console line configuration mode.**
 
 10. MLOC-Switch(config)#do wr 
-     Saves the running configuration to the startup configuration.
+    **Saves the running configuration to the startup configuration.**
 
 
 
