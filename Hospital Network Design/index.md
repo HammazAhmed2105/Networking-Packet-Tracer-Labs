@@ -58,6 +58,7 @@ To start off we are told HQ and branch should have 1 core router each, each core
 13. Testing config.
 # -----
 
+# Step 1
 # Basic settings on all devices and setting up ssh on routers and L3 switches
 - For this step we will be configuring hostnames, console password, enable password, banner messages, and disable IP domain lookup, on Layer 2 and Lyaer 3 Switches.
 
@@ -128,7 +129,8 @@ To start off we are told HQ and branch should have 1 core router each, each core
 
 # -----
 
-
+# Step 2
+# Vlan Assignment plus all access and trunk ports on L2 and L3 switches
 
 
 
