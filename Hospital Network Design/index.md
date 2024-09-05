@@ -55,9 +55,7 @@ To start off we are told HQ and branch should have 1 core router each, each core
 12. PAT + ACL
 13. Testing config.
 
-## Basic settings on all devices and setting up ssh on routers and L3 switches
 # Basic settings on all devices and setting up ssh on routers and L3 switches
-### Basic settings on all devices and setting up ssh on routers and L3 switches
 - For this step we will be configuring hostnames, console password, enable password, banner messages, and disable IP domain lookup, on Layer 2 and Lyaer 3 Switches.
 
 <img src="https://i.imgur.com/4g527Au.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
@@ -99,6 +97,30 @@ To start off we are told HQ and branch should have 1 core router each, each core
 
 - Upon checking I realized I forgot to use the command "service password encryption", which encrypts all password. So also include that command at the end.
   
+### Configuring the above basic settings on L3 switches and SSH as well.
+- For basic settings the commands are same as above, but we also include ssh config commands.
+Below are the commands and basic info on them on how to configure ssh.
+
+1. HQ-L3-Switch(config)#ip domain name cisco.net
+   # Sets the domain name of the switch to "cisco.net."
+
+2. HQ-L3-Switch(config)#username hammaz password hammaz
+   # Creates a local username "hammaz" with the password "hammaz."
+
+3. HQ-L3-Switch(config)#crypto key generate rsa
+   # Generates RSA keys for SSH encryption.
+
+4. How many bits in the modulus [512]: 1024
+   # Specifies the key size for the RSA encryption as 1024 bits.
+
+5. HQ-L3-Switch(config)#line vty 0 15
+   # Configures the virtual terminal (vty) lines 0 through 15 for remote access.
+
+6. HQ-L3-Switch(config-line)#login local
+   # Requires local username and password for vty login.
+
+7. HQ-L3-Switch(config-line)#transport input ssh
+   # Restricts remote access to SSH only (disabling Telnet).
 
 
 
