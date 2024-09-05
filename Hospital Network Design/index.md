@@ -36,9 +36,12 @@ To start off we are told HQ and branch should have 1 core router each, each core
 <img src="https://i.imgur.com/kPKCP0B.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
-- Final topology after labellign everything looks like below. With this we now move to configuration steps.
+- Final topology after labelling everything looks like below. With this we now move to configuration steps.
 
 <img src="https://i.imgur.com/69cNL1W.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+## Configuration Steps
+1. dwd
 
 
 
