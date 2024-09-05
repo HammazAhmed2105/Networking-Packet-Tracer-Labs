@@ -52,12 +52,13 @@ To start off we are told HQ and branch should have 1 core router each, each core
 9. Wireless networm config
 10. Site to site IPSec VPN.
 11. Default static route
-12. APT + ACL
+12. PAT + ACL
 13. Testing config.
 
+## Basic settings on all devices and setting up ssh on routers and L3 switches
+- For this step we will be configuring hostnames, console password, enable password, banner messages, and disable IP domain lookup, on Layer 2 and Lyaer 3 Switches.
 
-
-
+<img src="https://i.imgur.com/4g527Au.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
