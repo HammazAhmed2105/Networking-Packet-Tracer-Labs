@@ -3,3 +3,5 @@ To start off we are told HQ and branch should have 1 core router each, each core
 ## Diagram from Draw.io
 
 <img src="https://i.imgur.com/QWCF2Wk.png" height="85%" width="85%" alt="Disk Sanitization Steps"/>
+
+- Before doing any sort of configurations we will first make the whole topology in cisco packet tracer.
