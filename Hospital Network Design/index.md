@@ -162,6 +162,16 @@ MLOC-Switch(config-vlan)#**do wr**
 MLOC-Switch(config-if-range)#**switchport mode trunk**
 
 The above commands are bery similar for all other Layer 2 switches. We need to tweak the vlan number, name, and interface range a bit.
+
+## Vlan Configurations on Layer 3 Switches
+1. Create the appropirate number of vlans on the L3 switch. For instance the HQ switch will have vlan 10-60 while the branch will have the rest.
+2. Layer 3 interfaces facing towards L2 switches will be configured as ports.
+The interfaces marked below will be trunk.
+
+<img src="https://i.imgur.com/5aKPb9L.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/l3W2hzI.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
 # -----
 
 
