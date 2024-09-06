@@ -226,7 +226,9 @@ The interfaces marked below will be trunk.
 <img src="https://i.imgur.com/LZalLYf.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
+# Step 5
 
+## OSPF on the routers and L3 switches
 
 
 
