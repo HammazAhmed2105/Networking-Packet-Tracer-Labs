@@ -137,7 +137,29 @@ To start off we are told HQ and branch should have 1 core router each, each core
 
 <img src="https://i.imgur.com/ng7okWp.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+### Commands used for trunk and access port configuration
 
+<img src="https://i.imgur.com/rsJ01H1.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+1. Specifies the interface range (FastEthernet 0/3 to 0/5)
+MLOC-Switch(config)#**int range f0/3-5**
+
+2. Configuring the interfaces to operate in access mode
+MLOC-Switch(config-if-range)#**switchport mode access**
+
+3. Configuring switchport to access a VLAN
+MLOC-Switch(config-if-range)#**switchport access vlan 10**
+
+4. Creating VLAN 10
+MLOC-Switch(config-if-range)#**vlan 10**
+
+4. Naming VLAN 10 as "MLOC-Dept"
+MLOC-Switch(config-vlan)#**name MLOC-Dept**
+
+5. Saving the configuration to the device's memory
+MLOC-Switch(config-vlan)#**do wr**
+6. Making the ports trunk
+MLOC-Switch(config-if-range)#**switchport mode trunk**
 
 
 
