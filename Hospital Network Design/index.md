@@ -180,7 +180,9 @@ The interfaces marked below will be trunk.
 
 <img src="https://i.imgur.com/rVSjtkl.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+- Instruction - Configure port security for server site department switch to allow only one device to connect to a switch port, use sticky method to obtain mac address and violation mode shutdown.
 
+<img src="https://i.imgur.com/llnbacg.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
