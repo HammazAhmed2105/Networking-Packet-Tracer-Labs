@@ -174,6 +174,8 @@ The interfaces marked below will be trunk.
 
 # -----
 
+# Step 3
+##Switchport security to Finance department
 
 
 
