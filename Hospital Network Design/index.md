@@ -221,15 +221,9 @@ The interfaces marked below will be trunk.
 | SSS        | 192.168.102.64    | 255.255.255.240/28  | 192.168.102.65 to 192.168.102.78  | 192.168.102.79    |
 
 
-## Between Routers and L3 switches
+## Between Routers and L3 switches and ISPs
 
-| No.  | Network Address     |
-|------|---------------------|
-| HQR1-HQLSW1 | 192.168.102.80/30  |
-| HQR1-HQLSW2 | 192.168.102.84/30  |
-| BRR1-BRLSW1 | 192.168.102.88/30  |
-| BRR1-BRLSW2 | 192.168.102.92/30  |
-| HQr1-BRR1   | 192.168.102.96/30  |
+<img src="https://i.imgur.com/LZalLYf.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
