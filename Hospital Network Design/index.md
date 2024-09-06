@@ -190,6 +190,19 @@ The interfaces marked below will be trunk.
 
 ## Subnetting and IP Addressing
 
+- Instruction: Base network  - 192.168.100.0, carry out subnetting to allocate correct number of IP addresses to each department.
+- For HQ side we are using /26 prefix, while for Branch we are using /27.
+- Network between router and L3 switches will use /30 notation.
+
+| Department | Network Address  | Subnet Mask         | Host Address Range                | Broadcast Address |
+|------------|------------------|---------------------|-----------------------------------|-------------------|
+| MLOC       | 192.168.100.0     | 255.255.255.192/26  | 192.168.100.1 to 192.168.100.62   | 192.168.100.63    |
+| MER        | 192.168.100.64    | 255.255.255.192/26  | 192.168.100.65 to 192.168.100.126 | 192.168.100.127   |
+| MRM        | 192.168.100.128   | 255.255.255.192/26  | 192.168.100.129 to 192.168.100.190| 192.168.100.191   |
+| IT         | 192.168.100.192   | 255.255.255.192/26  | 192.168.100.193 to 192.168.100.254| 192.168.100.255   |
+| CS         | 192.168.101.0     | 255.255.255.192/26  | 192.168.101.1 to 192.168.101.62   | 192.168.101.63    |
+| Guest      | 192.168.101.64    | 255.255.255.192/26  | 192.168.101.65 to 192.168.101.126 | 192.168.101.127   |
+
 
 
 
