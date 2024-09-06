@@ -45,7 +45,7 @@ To start off we are told HQ and branch should have 1 core router each, each core
 ## Configuration Steps
 1. Basic settings on all devices including setting up ssh on routers and L3 switches
 2. Vlan Assignment plus all access and trunk ports on L2 and L3 switches.
-3. Switchport security to Finance department
+3. Switchport security to Server side site department
 4. Subnetting and IP Addressing
 5. OSPF on the routers and L3 switches
 6. Static IP addresses to server room
@@ -175,7 +175,27 @@ The interfaces marked below will be trunk.
 # -----
 
 # Step 3
-## Switchport security to Finance department
+## Switchport security to Server side site department
+- For this step we need to configure the switcport security settings on the switch thats directly connected to the server side.
+
+<img src="https://i.imgur.com/rVSjtkl.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
