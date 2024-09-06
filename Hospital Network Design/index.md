@@ -162,6 +162,9 @@ MLOC-Switch(config-vlan)#**do wr**
 MLOC-Switch(config-if-range)#**switchport mode trunk**
 
 The above commands are bery similar for all other Layer 2 switches. We need to tweak the vlan number, name, and interface range a bit.
+# -----
+
+
 
 
 
