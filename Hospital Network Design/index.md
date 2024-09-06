@@ -132,6 +132,10 @@ To start off we are told HQ and branch should have 1 core router each, each core
 # Step 2
 # Vlan Assignment plus all access and trunk ports on L2 and L3 switches
 
+### Note - Any link between Layer 3 switch and end devices will be access ports, while any link between Layer 2 switch and Layer 3 switch will be trunk ports. 
+- From the below image, the interfaces inside the purple circle are trunk, while the others are access ports.
+
+<img src="https://i.imgur.com/ng7okWp.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
