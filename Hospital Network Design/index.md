@@ -168,7 +168,7 @@ The above commands are bery similar for all other Layer 2 switches. We need to t
 2. Layer 3 interfaces facing towards L2 switches will be configured as ports.
 The interfaces marked below will be trunk.
 
-<img src="https://i.imgur.com/5aKPb9L.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/5aKPb9L.png" height="35%" width="35%" alt="Disk Sanitization Steps"/>
 
 <img src="https://i.imgur.com/l3W2hzI.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
