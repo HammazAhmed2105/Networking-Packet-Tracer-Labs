@@ -184,7 +184,11 @@ The interfaces marked below will be trunk.
 
 <img src="https://i.imgur.com/llnbacg.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+# -----
 
+# Step 4
+
+## Subnetting and IP Addressing
 
 
 
