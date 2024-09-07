@@ -258,11 +258,14 @@ Use the above steps on other routers and their interfaces.
 <img src="https://i.imgur.com/l4yp4Dh.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 ### Note - We need to issue the command **ip routing** on L3 switches.
+- According to point 16 in question "Configure default static routing to enable routers and multilayer switches to forward any traffic that does not match routing table entries. Use next-hop IP addresses.". We need to give a next hop address as we. Since Layer 3 switch is connected to the network 192.168.102.80/30, the next hop adress we will use is 192.168.102.82.
+- Command  - **ip route 0.0.0.0 0.0.0.0 192.168.102.82**
 
 <img src="https://i.imgur.com/NQCbxUN.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+- We can confirm that the gateway of last resort is set by using the command **do sh ip route**
 
-
+<img src="https://i.imgur.com/Qt3D7xW.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
