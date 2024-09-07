@@ -257,8 +257,9 @@ Use the above steps on other routers and their interfaces.
 
 <img src="https://i.imgur.com/l4yp4Dh.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+### Note - We need to issue the command **ip routing** on L3 switches.
 
-
+<img src="https://i.imgur.com/NQCbxUN.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
