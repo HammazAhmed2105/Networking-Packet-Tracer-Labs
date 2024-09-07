@@ -252,8 +252,10 @@ Use the above steps on other routers and their interfaces.
 # Step 5
 
 ## OSPF on the routers and L3 switches
+- OSPF is enabled on devices that route packet. That means L3 Switches and Routers.
+- How to know which netowrk will be included for OSPF? Check which network are the switches and routers directly connected to. As shown below the L3 switch is connected to 6 Vlan departments and 1 core router.
 
-
+<img src="https://i.imgur.com/l4yp4Dh.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
