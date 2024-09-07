@@ -225,6 +225,34 @@ The interfaces marked below will be trunk.
 
 <img src="https://i.imgur.com/LZalLYf.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+- If we want to make a port on a layer 3 routable we need to use the command no switchport on that interface. This way we can assign IP Address to that interface. The interface is marked below.
+
+<img src="https://i.imgur.com/yXtcjr2.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+Once we use no switchport we can simply assign an IP Address using the command shown below.
+
+<img src="https://i.imgur.com/X5GXmx2.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Step 5
 
