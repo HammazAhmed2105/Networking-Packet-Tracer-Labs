@@ -233,15 +233,16 @@ Once we use no switchport we can simply assign an IP Address using the command s
 
 <img src="https://i.imgur.com/X5GXmx2.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+We do the same above steps on all Layer 3 switches.
 
+### Assigning ip addresses on Routers
+- We can use the CLI to assign ip addresses like we did in previous projects, but this time we will use the gui. click on the router, go to config, and choose the interface. 
 
+<img src="https://i.imgur.com/5tftIWb.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+- We have to note that the first usable address is given to L3 interface. Now we assign accordingly.
 
-
-
-
-
-
+<img src="https://i.imgur.com/BVlRjHZ.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
