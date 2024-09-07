@@ -244,15 +244,9 @@ We do the same above steps on all Layer 3 switches.
 
 <img src="https://i.imgur.com/BVlRjHZ.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+Use the above steps on other routers and their interfaces.
 
-
-
-
-
-
-
-
-
+- We can use the command "do show ip interfaces brief" from global config mode, to see if we assigned the ip Addresses correctly.
 
 
 # Step 5
