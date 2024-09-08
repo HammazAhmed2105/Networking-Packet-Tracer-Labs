@@ -285,5 +285,6 @@ Use the above steps on other routers and their interfaces.
 
 - One thing to note about core routers is, they have redundancy with ISPs. So if one goes down it will use the other as its default route. So there will be 2 Default routes.
 
-Note- I have to do ospf config on routers
+<img src="https://i.imgur.com/B012OQ6.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
 
