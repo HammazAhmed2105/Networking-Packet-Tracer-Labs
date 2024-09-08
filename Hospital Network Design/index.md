@@ -321,10 +321,13 @@ Accoridngly for Email, DNS, and HTTP server the ip address will be 192.168.102.6
 
 <img src="https://i.imgur.com/fXvgra7.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+- Below are shown, all the pools that I created.
 
+<img src="https://i.imgur.com/qqepcYt.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+# -----
 
-
+# 8. Inter vlan routing on L3 switches and ip dhcp helper address
 
 
 
