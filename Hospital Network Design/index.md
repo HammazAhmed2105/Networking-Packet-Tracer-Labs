@@ -290,4 +290,39 @@ Use the above steps on other routers and their interfaces.
 - Below are the configurations for Branch Router. Very similar.
 
 <img src="https://i.imgur.com/s8FyyLW.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
-  
+
+- Configuration of OSPF on the ISP rotuers are the same, except the network will change accordingly.
+
+# -----
+
+# 6. Static IP addresses to server room
+
+<img src="https://i.imgur.com/9Epjgvr.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+- As shown above, we need to assign static IP Address with the network, 192.168.102.64/28.
+- The default route is 192.168.102.65, and dns server 192.168.102.68
+
+<img src="https://i.imgur.com/SerHNs7.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+Accoridngly for Email, DNS, and HTTP server the ip address will be 192.168.102.67, 192.168.102.68, 192.168.102.69
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
