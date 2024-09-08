@@ -354,8 +354,9 @@ Accoridngly for Email, DNS, and HTTP server the ip address will be 192.168.102.6
 
 <img src="https://i.imgur.com/vBKjzZW.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+- The interface is g0/2, and we need to remove the ip address from that interface, and then create sub interface, as shown below.
 
-
+<img src="https://i.imgur.com/hlavQ2d.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
