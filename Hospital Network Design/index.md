@@ -314,7 +314,12 @@ Accoridngly for Email, DNS, and HTTP server the ip address will be 192.168.102.6
 
 <img src="https://i.imgur.com/rTS0NZQ.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+- The default gateway will be first usable IP Address for that department and network. So for the MOC department the network is 192.168.100.0, therefore the default gateway will be first usable ip address, that is 192.168.100.1/
+- The DNS server is 192.168.102.68, as we assigned in step 6. This will be same for all departments.
+- You can choose the starting IP address of hosts as you like, as long as they are in the designated network, and dont over lap.
+-  See below for reference
 
+<img src="https://i.imgur.com/fXvgra7.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
