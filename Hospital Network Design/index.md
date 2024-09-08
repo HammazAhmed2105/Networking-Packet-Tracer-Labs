@@ -329,13 +329,16 @@ Accoridngly for Email, DNS, and HTTP server the ip address will be 192.168.102.6
 
 # 8. Inter vlan routing on L3 switches and ip dhcp helper address
 
-- Configurations for Layer 3 Switches
+### Configurations for Layer 3 Switches
 - For each Vlan, for example Vlan 10, we assign the default address of the network, and then we use the command ip helper address and use the dhcp address.
 
 <img src="https://i.imgur.com/v8uSTyk.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
-1. int vlan 10 - Using this command we enter the vlan 10 interface
-2. ip address 192.168.100.1 255.255.255.192  - We assign the defauly address of the network to this interface.
-3. no ip helper-address 192.168.102.65 - I used the command with no to undo the command. I entered 192.168.102.65, which isn't the DHCP server address. it should be 192.168.102.66, which i corrected in the next step.
+1. **int vlan 10** - Using this command we enter the vlan 10 interface
+2. **ip address 192.168.100.1 255.255.255.192**  - We assign the defauly address of the network to this interface.
+3. **no ip helper-address 192.168.102.65** - I used the command with no to undo the command. I entered 192.168.102.65, which isn't the DHCP server address. it should be 192.168.102.66, which i corrected in the next step.
+- The configuration is similar for other vlans, except the vlan number and default address changes accordingly.
+
+
 
 
