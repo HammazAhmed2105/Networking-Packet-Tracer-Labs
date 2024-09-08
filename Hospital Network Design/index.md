@@ -287,4 +287,7 @@ Use the above steps on other routers and their interfaces.
 
 <img src="https://i.imgur.com/B012OQ6.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+- Below are the configurations for Branch Router. Very similar.
 
+<img src="https://i.imgur.com/s8FyyLW.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+  
