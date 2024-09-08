@@ -267,8 +267,11 @@ Use the above steps on other routers and their interfaces.
 
 <img src="https://i.imgur.com/Qt3D7xW.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+- The configurtion for HQ Layer 3 otehr switch is the same as above, except the default route will be 192.168.102.86.
 
+- Below are the configurations for Branch Layer 3 Switch.
 
+<img src="https://i.imgur.com/0niYsay.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
