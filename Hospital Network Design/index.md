@@ -343,3 +343,7 @@ Accoridngly for Email, DNS, and HTTP server the ip address will be 192.168.102.6
 
 <img src="https://i.imgur.com/SwJ39F4.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/f3CnvUE.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+- We do the same exact commands on HQs other router/
+- Below are the commands for Branch Layer 3 switch.
+<img src="https://i.imgur.com/4MWIEJu.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
