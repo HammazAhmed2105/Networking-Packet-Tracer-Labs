@@ -339,6 +339,7 @@ Accoridngly for Email, DNS, and HTTP server the ip address will be 192.168.102.6
 3. **no ip helper-address 192.168.102.65** - I used the command with no to undo the command. I entered 192.168.102.65, which isn't the DHCP server address. it should be 192.168.102.66, which i corrected in the next step.
 - The configuration is similar for other vlans, except the vlan number and default address changes accordingly.
 
+- In order to save time, I first wrote all the commands on notepad and copy pasted them. Since the configuration for HQ Layer switch will be same for both.
 
-
-
+<img src="https://i.imgur.com/SwJ39F4.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/f3CnvUE.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
