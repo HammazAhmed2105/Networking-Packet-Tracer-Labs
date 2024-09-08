@@ -346,4 +346,37 @@ Accoridngly for Email, DNS, and HTTP server the ip address will be 192.168.102.6
 
 - We do the same exact commands on HQs other router/
 - Below are the commands for Branch Layer 3 switch.
+
 <img src="https://i.imgur.com/4MWIEJu.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+### Inter-Vlan config on router connected to server side site.
+- First we do the configuration on the inteface thats shown below.
+
+<img src="https://i.imgur.com/vBKjzZW.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
