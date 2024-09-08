@@ -334,6 +334,8 @@ Accoridngly for Email, DNS, and HTTP server the ip address will be 192.168.102.6
 
 <img src="https://i.imgur.com/v8uSTyk.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
-
+1. int vlan 10 - Using this command we enter the vlan 10 interface
+2. ip address 192.168.100.1 255.255.255.192  - We assign the defauly address of the network to this interface.
+3. no ip helper-address 192.168.102.65 - I used the command with no to undo the command. I entered 192.168.102.65, which isn't the DHCP server address. it should be 192.168.102.66, which i corrected in the next step.
 
 
