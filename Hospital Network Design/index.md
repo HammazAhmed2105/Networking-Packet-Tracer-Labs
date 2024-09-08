@@ -248,6 +248,7 @@ Use the above steps on other routers and their interfaces.
 
 - We can use the command "do show ip interfaces brief" from global config mode, to see if we assigned the ip Addresses correctly.
 
+# -----
 
 # Step 5
 
@@ -267,14 +268,20 @@ Use the above steps on other routers and their interfaces.
 
 <img src="https://i.imgur.com/Qt3D7xW.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
-- The configurtion for HQ Layer 3 otehr switch is the same as above, except the default route will be 192.168.102.86.
+- The configurtion for HQ Layer 3 other switch is the same as above, except the default route will be 192.168.102.86.
 
 - Below are the configurations for Branch Layer 3 Switch.
 
 <img src="https://i.imgur.com/0niYsay.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+- The configurtion for Branch Layer 3 other switch is the same as above, except the default route will be 192.168.102.98
 
+### Configuring OSPF on the Routers
 
+- Similar to above we configure it similarly bu noting down which ever network that router is connected to.
+- For isntance the below router is connected to 192.168.102.80/30, 195.136.17.0/30, 195.136.17.4/30, and 192.168.102.88/30, 192.168.102.64/28, 192.168.102.84/30, 192.168.102.80/30
+
+<img src="https://i.imgur.com/LmFebwj.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
