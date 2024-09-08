@@ -305,13 +305,14 @@ Use the above steps on other routers and their interfaces.
 <img src="https://i.imgur.com/SerHNs7.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 Accoridngly for Email, DNS, and HTTP server the ip address will be 192.168.102.67, 192.168.102.68, 192.168.102.69
+# -----
 
+# 7. DHCP server device configurations
 
+- The DHCP server mentioned and showed in Step 6, will be reposible for allocating IP Addresses to all other departments. We will create pools for that. Theres 12 departments therefore there will be 12 pools created.
+- First we click on the DHCP server, click on services tab on top, and choose DHCP from the left column. 
 
-
-
-
-
+<img src="https://i.imgur.com/rTS0NZQ.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
