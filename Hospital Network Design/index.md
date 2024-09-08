@@ -329,8 +329,10 @@ Accoridngly for Email, DNS, and HTTP server the ip address will be 192.168.102.6
 
 # 8. Inter vlan routing on L3 switches and ip dhcp helper address
 
+- Configurations for Layer 3 Switches
+- For each Vlan, for example Vlan 10, we assign the default address of the network, and then we use the command ip helper address and use the dhcp address.
 
-
+<img src="https://i.imgur.com/v8uSTyk.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
