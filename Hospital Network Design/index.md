@@ -397,7 +397,7 @@ Accoridngly for Email, DNS, and HTTP server the ip address will be 192.168.102.6
 
 <img src="https://i.imgur.com/MHGteBI.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
-
+The above steps apply to all the access points, laptops, and smartphone in all other department. Ofcourse, the SSID,password changes accordingly.
 
 
 
