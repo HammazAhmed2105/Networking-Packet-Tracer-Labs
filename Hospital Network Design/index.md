@@ -391,8 +391,11 @@ Accoridngly for Email, DNS, and HTTP server the ip address will be 192.168.102.6
 
 <img src="https://i.imgur.com/YxtlLdo.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+### Configurations on the Smart Phone
 
+- The configurations of smart phone is jsut putting in the SSId, and password.
 
+<img src="https://i.imgur.com/MHGteBI.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
