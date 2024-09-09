@@ -399,6 +399,12 @@ Accoridngly for Email, DNS, and HTTP server the ip address will be 192.168.102.6
 
 The above steps apply to all the access points, laptops, and smartphone in all other department. Ofcourse, the SSID,password changes accordingly.
 
+# -----
+
+## Note - According to our topology, we need to configure site to site VPN, default static route, and then PAT + ACL. For some reason I'll configure PAT and ACL first hence we will do step 12 first.
+
+### Step 12 -PAT + ACL
+
 
 
 
