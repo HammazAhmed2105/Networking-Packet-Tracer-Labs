@@ -367,7 +367,7 @@ Accoridngly for Email, DNS, and HTTP server the ip address will be 192.168.102.6
 
 # -----
 
-# 9. Wireless networm config
+# 9. Wireless network config
 
 1. First we need to make some configurations on the access point, followed by the smartphone and laptop.
 
@@ -381,11 +381,15 @@ Accoridngly for Email, DNS, and HTTP server the ip address will be 192.168.102.6
 
 - We put in the SSID, which basically means the name of the router. Followed by WPA2 authentication, which is the most secure available on thie access point. Adn then we choose a passphrase, of our choice.
 
+### Configurations on the Laptop
 
+- Click on the laptop, and as shown in below image, first turn it off, and drag the module thats already there, and remove it. Drag and put the module named WPC300N. This will let te laptop connect to the access point. Dont forget to turn on the laptop again.
 
+<img src="https://i.imgur.com/yGOpARx.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+- Now click on config, followed by wireless0 from the left pane. Do the below marked configuration. 
 
-
+<img src="https://i.imgur.com/YxtlLdo.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
