@@ -358,8 +358,10 @@ Accoridngly for Email, DNS, and HTTP server the ip address will be 192.168.102.6
 
 <img src="https://i.imgur.com/hlavQ2d.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
-
-
+### Important note 
+- I tried going to different desktops, click on them, and turning on DHCP, but I faced issues, the DHCP wasnt able to assign IP Addresses. After spending some time I realized, when we made pools on the DHCP device, I forgot to turn them on. So make sure you click on. See below screenshot for reference.
+  
+<img src="https://i.imgur.com/friuLnx.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
