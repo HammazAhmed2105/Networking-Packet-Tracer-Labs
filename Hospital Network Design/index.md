@@ -365,8 +365,9 @@ Accoridngly for Email, DNS, and HTTP server the ip address will be 192.168.102.6
 
 - The guest departments are still not working. We will figure that out later on.
 
+# -----
 
-
+# 9. Wireless networm config
 
 
 
