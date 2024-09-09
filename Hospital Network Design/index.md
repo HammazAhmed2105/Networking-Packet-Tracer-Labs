@@ -1,4 +1,4 @@
-To start off we are told HQ and branch should have 1 core router each, each core router connecting to two L3 switches, which in turn connects to Several Access Layer switches. The core routers should also be connected to 2 ISPs. Theres a server site too, which will be connecting to the HQ core router directly. I amde a smple network using draw.io to understand what our final topology might look like. 
+![image](https://github.com/user-attachments/assets/9c7f3da1-bbb4-4a06-bf8d-71e218178dfb)To start off we are told HQ and branch should have 1 core router each, each core router connecting to two L3 switches, which in turn connects to Several Access Layer switches. The core routers should also be connected to 2 ISPs. Theres a server site too, which will be connecting to the HQ core router directly. I amde a smple network using draw.io to understand what our final topology might look like. 
 
 ## Diagram from Draw.io
 
@@ -369,8 +369,17 @@ Accoridngly for Email, DNS, and HTTP server the ip address will be 192.168.102.6
 
 # 9. Wireless networm config
 
+1. First we need to make some configurations on the access point, followed by the smartphone and laptop.
 
+### Configurations on the Access Point
 
+<img src="https://i.imgur.com/KZI8Iwa.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+- Click on the access point, followed by config, then port 1. Enter the below details.
+
+<img src="https://i.imgur.com/s4PNKjE.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+- We put in the SSID, which basically means the name of the router. Followed by WPA2 authentication, which is the most secure available on thie access point. Adn then we choose a passphrase, of our choice.
 
 
 
