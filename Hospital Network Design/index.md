@@ -409,5 +409,34 @@ The above steps apply to all the access points, laptops, and smartphone in all o
 - We will be enabling PAT on the 2 core routers.
 - Also, clock rate should be set on appropriate interfaces, on the core routers for efficient use of PAT. Why?
 - Setting the clock rate is required on the DCE side of a serial connection to establish proper timing for data transmission. However, clock rate configuration and Port Address Translation (PAT) are not directly related. The clock rate is necessary for the serial link to function, while PAT operates on IP addressing and port mapping. Both need to be configured properly for successful data flow, but the clock rate specifically ensures the serial link's communication timing, which is essential before enabling any routing or NAT/PAT functionality.
+- In order to set clock rate, hover over the routers serial cables, if theres a clock sign beside the interface name we need to set a clock rate.
+
+<img src="https://i.imgur.com/t8dp4q3.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+- The interface on the left has a clock sign therefore we assign a clock rate of 64000 on it.
+
+<img src="https://i.imgur.com/7KS5JdD.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+- Do this for all required interfaces.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
