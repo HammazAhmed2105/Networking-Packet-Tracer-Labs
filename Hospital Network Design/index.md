@@ -402,10 +402,12 @@ The above steps apply to all the access points, laptops, and smartphone in all o
 
 # -----
 
-## Note - According to our topology, we need to configure site to site VPN, default static route, and then PAT + ACL. For some reason I'll configure PAT and ACL first hence we will do step 12 first.
+## Note - According to our topology, we need to configure site to site VPN, default static route, and then PAT + ACL. For reasons I'll configure PAT and ACL first hence we will do step 12 first.
 
 ### Step 12 -PAT + ACL
-
-
+- Port Address Translation (PAT) is used to allow multiple devices on a local network to share a single public IP address by mapping unique port numbers for each session, enabling efficient use of limited public IP addresses.
+- We will be enabling PAT on the 2 core routers.
+- Also, clock rate should be set on appropriate interfaces, on the core routers for efficient use of PAT. Why?
+- Setting the clock rate is required on the DCE side of a serial connection to establish proper timing for data transmission. However, clock rate configuration and Port Address Translation (PAT) are not directly related. The clock rate is necessary for the serial link to function, while PAT operates on IP addressing and port mapping. Both need to be configured properly for successful data flow, but the clock rate specifically ensures the serial link's communication timing, which is essential before enabling any routing or NAT/PAT functionality.
 
 
