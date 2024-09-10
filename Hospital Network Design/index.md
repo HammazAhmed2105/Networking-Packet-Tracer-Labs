@@ -6,7 +6,8 @@ To start off we are told HQ and branch should have 1 core router each, each core
 
 - Before doing any sort of configurations we will first make the whole topology in cisco packet tracer.
 
-- The core routers are to be connected with serial dce connection. But when you click on the router, you wont see any serial itnerfaces, as shown below.
+- The core routers are to be connected with serial dce connection. Why? Core routers use serial DCE connections for clocking control and synchronization over point-to-point WAN links.
+- But when you click on the router, you wont see any serial itnerfaces, as shown below.
 
 <img src="https://i.imgur.com/XFgF3H7.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
