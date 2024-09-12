@@ -435,12 +435,12 @@ The above steps apply to all the access points, laptops, and smartphone in all o
 
 - Before configuring Access Lists, we need to also use the below commands on routers and add the serial interfaces to them as shwon below.
 
-<img src="https://i.imgur.com/QGXIxCr.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/pZMYe5B.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 ```bash
 Branch-Router(config)#ip nat inside source list 1 interface ser0/3/1 overload
 Branch-Router(config)#ip nat inside source list 1 interface ser0/2/0 overload
-
+```
 
 
 
