@@ -433,8 +433,12 @@ The above steps apply to all the access points, laptops, and smartphone in all o
   
 <img src="https://i.imgur.com/QGXIxCr.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+- Before configuring Access Lists, we need to also use the below commands on routers and add the serial interfaces to them as shwon below.
 
+<img src="https://i.imgur.com/QGXIxCr.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+Branch-Router(config)#ip nat inside source list 1 interface ser0/3/1 overload
+Branch-Router(config)#ip nat inside source list 1 interface ser0/2/0 overload
 
 
 
