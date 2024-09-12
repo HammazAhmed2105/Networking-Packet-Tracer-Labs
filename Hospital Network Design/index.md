@@ -442,8 +442,11 @@ Branch-Router(config)#ip nat inside source list 1 interface ser0/3/1 overload
 Branch-Router(config)#ip nat inside source list 1 interface ser0/2/0 overload
 ```
 
+### Allowing correct networks for ACL
 
+- Now we add the networks to the Acces list as shown below.
 
+<img src="https://i.imgur.com/yl9tyex.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
