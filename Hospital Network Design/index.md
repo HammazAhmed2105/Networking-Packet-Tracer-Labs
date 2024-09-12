@@ -433,7 +433,7 @@ The above steps apply to all the access points, laptops, and smartphone in all o
   
 <img src="https://i.imgur.com/QGXIxCr.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
-- Before configuring Access Lists, we need to also use the below commands on routers and add the serial interfaces to them as shwon below.
+- Before configuring Access Lists, we need to also use the below commands on routers and add the serial interfaces to them as shwon below. On both HQ and Branch router.
 
 <img src="https://i.imgur.com/pZMYe5B.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
