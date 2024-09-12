@@ -419,10 +419,13 @@ The above steps apply to all the access points, laptops, and smartphone in all o
 
 - Do this for all required interfaces.
 
+### Configuring PAT
 
+- The PAT will be configured on HQ and Branch core routers. Either outside or inside.
+- The interfaces marked in gree will be ip nat inside, while the black ones will be outside.
 
-
-
+<img src="https://i.imgur.com/8idlh7a.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/EPphc2m.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 
 
