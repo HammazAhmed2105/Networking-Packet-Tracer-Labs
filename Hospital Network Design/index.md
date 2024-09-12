@@ -448,9 +448,11 @@ Branch-Router(config)#ip nat inside source list 1 interface ser0/2/0 overload
 - Now we add the networks to the Acces list as shown below.
 
 <img src="https://i.imgur.com/yl9tyex.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+### Note that we also need to permit the correct networks, but we will do that after configuring IP Sec tunnel.
 
+# Step 10
 
-
+##  Site to site IPSec VPN
 
 
 
