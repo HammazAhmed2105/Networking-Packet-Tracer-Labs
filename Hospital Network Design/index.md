@@ -437,8 +437,10 @@ The above steps apply to all the access points, laptops, and smartphone in all o
 
 <img src="https://i.imgur.com/QGXIxCr.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
+```bash
 Branch-Router(config)#ip nat inside source list 1 interface ser0/3/1 overload
 Branch-Router(config)#ip nat inside source list 1 interface ser0/2/0 overload
+
 
 
 
