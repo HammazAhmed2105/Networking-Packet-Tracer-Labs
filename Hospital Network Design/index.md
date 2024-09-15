@@ -467,7 +467,7 @@ Branch-Router(config)#ip nat inside source list 1 interface ser0/2/0 overload
 ##
 -Since we want all traffic from HQ to branch network and vice versa to be encrypted, we need to cofngiure Access control lists.
 - We will configure lots of rules, since for instance one network from theHQ side should connect to all networks on the Branch network.
-- To reduce workload we will do route summarization, that is changing the wild card mask in such a way that it will include multiple ip addresses.
+- To reduce workload we will do route summarization, Route summarization is a method where we create one summary route that represent multiple networks/subnets. It's also called route aggregation or supernetting.
 
 # HQ-Route Summarization
 
@@ -476,7 +476,7 @@ Branch-Router(config)#ip nat inside source list 1 interface ser0/2/0 overload
 192.168.100.128/26  
 192.168.100.192/26  
 
-**Summarized as:** 192.168.101.0/25
+**Summarized as:** 192.168.100.0/24
 
 192.168.101.0/26  
 192.168.101.64  
@@ -494,7 +494,9 @@ Branch-Router(config)#ip nat inside source list 1 interface ser0/2/0 overload
 
 **Summarized as:** 192.168.101.128/24
 
+## HQ-Router ACL config
 
+-  1st rule on HQ router - **access-list 110 permit ip 192.168.100.0 0.0.0.255 192.168.101.128 0.0.0.255**
 
 
 
