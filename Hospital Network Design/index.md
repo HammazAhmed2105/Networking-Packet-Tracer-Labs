@@ -453,6 +453,26 @@ Branch-Router(config)#ip nat inside source list 1 interface ser0/2/0 overload
 # Step 10
 
 ##  Site to site IPSec VPN
+- In order to create a site to site vpn, we will create a tunnel between Branch and HQ router, so all the traffic flowing between them is encrypted.
+- First step is to enable security technology packet on the routers
+Command - license boot module c2900 technology-package securityk9
+
+<img src="https://i.imgur.com/ix5MuPC.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
