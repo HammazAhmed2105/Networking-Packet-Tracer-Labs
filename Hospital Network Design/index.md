@@ -460,8 +460,37 @@ Branch-Router(config)#ip nat inside source list 1 interface ser0/2/0 overload
 <img src="https://i.imgur.com/ix5MuPC.png" height="65%" width="65%" alt="Disk Sanitization Steps"/>
 
 - After that type **do reload** to restart the router.
+- Do these steps on both Hq and Branch router.
 
+##
+-Since we want all traffic from HQ to branch network and vice versa to be encrypted, we need to cofngiure Access control lists.
+- We will configure lots of rules, since for instance one network from theHQ side should connect to all networks on the Branch network.
+- To reduce workload we will do route summarization, that is changing the wild card mask in such a way that it will include multiple ip addresses.
 
+# HQ-Route Summarization
+
+192.168.100.0/26  
+192.168.100.64/26  
+192.168.100.128/26  
+192.168.100.192/26  
+
+**Summarized as:** 192.168.101.0/25
+
+192.168.101.0/26  
+192.168.101.64  
+
+**Summarized as:** 192.168.101.0/25
+
+# Branch Router Summarization
+
+192.168.101.128/27  
+192.168.101.160/27  
+192.168.101.192/27  
+192.168.101.224/27  
+192.168.102.0/27  
+192.168.102.32/27  
+
+**Summarized as:** 192.168.101.128/24
 
 
 
