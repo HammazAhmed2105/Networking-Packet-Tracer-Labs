@@ -504,6 +504,8 @@ Branch-Router(config)#ip nat inside source list 1 interface ser0/2/0 overload
 - 1st rule on Branch router - **access-list 110 permit ip 192.168.101.128 0.0.0.255 192.168.100.0 0.0.0.255**
 - 2nnd rule on Branch router - **access-list 110 permit ip 192.168.101.128 0.0.0.255 192.168.101.0 0.0.0.127**
 
+## Creating Internet Key Exchange
+
 
 
 
